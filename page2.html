@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Page</title>
+<style>
+    #jollipic {
+        width: 90%; 
+        height: auto; 
+        display: block; 
+        margin: auto; 
+    }
+</style>
+<script>
+function changeImage() {
+    var image = document.getElementById("jollipic");
+    if (image.src.includes("jb.png")) {
+        image.src = "jbcute.jpg";
+    } else {
+        image.src = "jb.png";
+    }
+}
+</script>
+</head>
+<body>
+<img id="jollipic" src="jb.png" alt="jollipic" onclick="changeImage()">
+</body>
+</html>
