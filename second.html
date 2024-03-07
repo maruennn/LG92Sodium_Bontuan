@@ -13,15 +13,6 @@
         }
     </style>
     <script>
-        function changeImage() {
-            var image = document.getElementById("jollipic");
-            if (image.src.includes("jb.png")) {
-                image.src = "jbcute.jpg";
-            } else {
-                image.src = "jb.png";
-            }
-        }
-
         function toggleImage() {
             var image = document.getElementById("jollipic");
             if (image.src.includes("jb.png")) {
@@ -33,7 +24,7 @@
     </script>
 </head>
 <body>
-    <img id="jollipic" src="jb.png" alt="jollipic" onclick="changeImage()">
+    <img id="jollipic" src="jb.png" alt="jollipic" onclick="toggleImage()">
     <button onclick="toggleImage()">Toggle Image</button>
 </body>
 </html>
